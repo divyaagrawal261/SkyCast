@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyCast</title>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main-style.css" />
+    <link rel="stylesheet" href="loader.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <link rel="shortcut icon" href="SkyCast-logo.ico" type="image/x-icon" />
+  </head>
+  <body onload="hide()">
+
+    <!-- LOADING SECTION -->
+    <div id="loader">
+      <div class="loader-container">
+        <img src="images/attachment (1).gif" alt="" class="loading-animation" />
+      </div>
+    </div>
+
+    <!-- Main Section -->
+    <div id="main-content">
+      <div class="bar" id="top-bar">
+        <span id="brand-name"
+          ><img src="images/SkyCast-logo.png" class="logo" /> SkyCast</span
+        >
+      </div>
+
+      <!-- Landing page -->
+      <div class="landing">
+        <div class="left-land">
+          <div class="top-left">
+            <h1 class="main-heading">Sky Cast</h1>
+            <p class="main-description">
+              A concise weather platform providing real-time forecasts,
+              interactive maps, and an intuitive interface for seamless access
+              to accurate weather information anytime, anywhere.
+            </p>
+          </div>
+          <div class="bottom-left">
+            <p class="know-more">Know your city with every search</p>
+            <p class="main-description">
+              SkyCast will showcase an exquisite portrayal of your city's visual
+              essence.
+            </p>
+          </div>
+        </div>
+        <div class="right-land">
+          <div class="top-right"></div>
+        </div>
+      </div>
+
+      <!-- Details of weather -->
+      <div id="detail-container">
+        <div class="search-section">
+          <input type="text" id="city" placeholder="Enter City Name" />
+          <button id="action" onclick="getData()"></button>
+        </div>
+        <div id="details">
+          <div id="float-left" class="additional-info">
+            <div class="info">
+              <img src="images/humidity.png" class="symbols" />
+              <span id="humidity" class="detailed-info">Humidity</span>
+            </div>
+            <div class="info">
+              <img
+                class="symbols"
+                id="pressure-symbol"
+                src="images/pressure.png"
+              />
+              <span id="pressure" class="detailed-info">Pressure</span>
+            </div>
+            <div class="info" id="clouds-info">
+              <img class="symbols" src="images/clouds.png" />
+              <span id="clouds" class="detailed-info">Clouds</span>
+            </div>
+            <div class="info" id="ground-level">
+              <img src="images/layer.png" class="symbols" />
+              <span id="ground" class="detailed-info">Ground-level</span>
+            </div>
+            <div class="info" id="sea-level">
+              <img src="images/sea-level.png" alt="" class="symbols" />
+              <span id="sea" class="detailed-info">Sea-level</span>
+            </div>
+          </div>
+
+          <div class="additional-info" id="float-center">
+            <span id="cityname" class="detailed-info">Location</span>
+            <div class="info" id="temperature-info">
+              <img src="/images/temperature.png" class="symbols" />
+              <span id="temperature" class="detailed-info">Temp</span>
+            </div>
+            <span id="feels-like" class="detailed-info">Feels like</span><br />
+            <div class="info" id="main-info">
+              <span id="main" class="detailed-info">Main</span>
+            </div>
+            <div class="info" id="description-info">
+              <span id="description" class="detailed-info">Description</span>
+            </div>
+            <span id="min-max" class="detailed-info">Min/Max</span>
+          </div>
+
+          <div class="additional-info" id="float-right">
+            <div class="info" id="wind-info">
+              <img class="symbols" src="images/wind.png" />
+              <span id="wind" class="detailed-info">Wind Speed</span>
+            </div>
+            <div class="info" id="visibility-info">
+              <img class="symbols" src="images/visibility.png" />
+              <span id="visibility" class="detailed-info">Visibility</span>
+            </div>
+            <div class="info" id="latitude-info">
+              <img src="images/compass.png" class="symbols" />
+              <span class="detailed-info" id="latitude">Latitude</span>
+            </div>
+            <div class="info" id="longitude-info">
+              <img src="images/compass.png" class="symbols" />
+              <span class="detailed-info" id="longitude">Longitude</span>
+            </div>
+            <div id="card"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More features section -->
+      <div class="bar-more">
+        <div class="more">More from SkyCast</div>
+      </div>
+
+      <div class="extended-features-container">
+        <div class="features">
+          <iframe
+            src="https://www.meteoblue.com/en/weather/maps/widget/new-delhi_india_1261481?windAnimation=0&gust=0&satellite=0&cloudsAndPrecipitation=0&temperature=0&temperature=1&sunshine=0&extremeForecastIndex=0&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=2&autowidth=manu"
+            frameborder="0"
+            scrolling="NO"
+            allowtransparency="true"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+          ></iframe>
+          <div class="name">Temperature</div>
+        </div>
+        <div class="features">
+          <iframe
+            src="https://www.meteoblue.com/en/weather/maps/widget/new-delhi_india_1261481?windAnimation=0&windAnimation=1&satellite=0&cloudsAndPrecipitation=0&temperature=0&sunshine=0&extremeForecastIndex=0&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=2&autowidth=manu"
+            frameborder="0"
+            scrolling="NO"
+            allowtransparency="true"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+          ></iframe>
+          <div class="name">Wind</div>
+        </div>
+        <div class="features">
+          <iframe
+            src="https://www.meteoblue.com/en/weather/maps/widget/new-delhi_india_1261481?windAnimation=0&gust=0&satellite=0&cloudsAndPrecipitation=0&cloudsAndPrecipitation=1&temperature=0&sunshine=0&extremeForecastIndex=0&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=2&autowidth=manu"
+            frameborder="0"
+            scrolling="NO"
+            allowtransparency="true"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+          ></iframe>
+          <div class="name">Clouds and Precipitation</div>
+        </div>
+
+        <div class="features">
+          <iframe
+            src="https://www.meteoblue.com/en/weather/maps/widget/new-delhi_india_1261481?windAnimation=0&gust=0&satellite=0&cloudsAndPrecipitation=0&temperature=0&sunshine=0&sunshine=1&extremeForecastIndex=0&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=2&autowidth=manu"
+            frameborder="0"
+            scrolling="NO"
+            allowtransparency="true"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+          ></iframe>
+          <div class="name">Daylight Hours</div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="bar" id="bottom-bar">
+        <pre><span id="Copyright">Copyright© All Rights Reserved</span><span id="linkedin-link">Owned by <a href="">Divya Agrawal</a></span></pre>
+      </div>
+    </div>
+
+    <!-- making the Enter key alive -->
+    <script>
+      document.getElementById("city").addEventListener("keypress", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("action").click();
+        }
+      });
+
+    //Loading window javascript 
+      function hide() {
+        var main_page = document.getElementById("main-content");
+        var loader = document.getElementById("loader");
+        loader.style.display = "none";
+        main_page.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#main-content {
+  display: none;
+}
+:root {
+  --my-font: "Poppins", sans-serif;
+}
+.logo {
+  position: relative;
+  top: 10px;
+  height: 60px;
+}
+#top-bar {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+}
+#brand-name {
+  color: white;
+  padding-left: 10px;
+  font-size: 55px;
+  font-family: var(--my-font);
+  font-weight: bolder;
+  font-variant-caps: small-caps;
+  float: left;
+}
+#search-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#city {
+  border-radius: 5px 0px 5px 0px;
+  border: 1px solid grey;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: larger;
+  font-family: var(--my-font);
+}
+.detailed-info {
+  font-family: var(--my-font);
+  margin-bottom: 10px;
+  font-size: xx-large;
+  text-shadow: 2px 2px black;
+}
+#main-info {
+  margin-top: 50px;
+}
+#clouds-info,
+#visibility-info {
+  margin-bottom: 0px;
+}
+#description-info {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+#pressure-symbol {
+  background-color: rgba(255, 255, 255, 0.486);
+  border-radius: 5px;
+  padding: 5px;
+}
+#temperature-info,
+#main-info {
+  margin-bottom: 0px;
+}
+.more {
+  font-family: var(--my-font);
+  font-size: 50px;
+  padding-left: 10px;
+}
+.bar-more {
+  color: white;
+  font-family: var(--my-font);
+  text-align: left;
+}
+.extended-features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: wheat;
+}
+.landing {
+  height: 700px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.left-land {
+  width: 40%;
+}
+.main-description {
+  text-align: left;
+  padding-left: 50px;
+  font-family: var(--my-font);
+  color: rgb(116, 116, 116);
+}
+.right-land {
+  width: 60%;
+}
+.left-land,
+.right-land {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-right {
+  height: 700px;
+  background-image: url(images/Untitled.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.bottom-right {
+  height: 100px;
+  width: 100%;
+  border: 1px solid wheat;
+  padding-top: 30px;
+}
+.top-left {
+  width: 100%;
+  height: 500px;
+}
+.bottom-left {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+.features {
+  height: max-content;
+  font-family: var(--my-font);
+  background-color: rgba(83, 83, 83, 0.384);
+  width: max-content;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.features iframe {
+  border-radius: 10px;
+  height: 350px;
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+.bar {
+  text-align: left;
+  color: white;
+  background-color: black;
+  height: 60px;
+}
+#float-left,
+#float-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: var(--my-font);
+  text-align: left;
+}
+.main-heading {
+  font-family: var(--my-font);
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 200px;
+  font-variant-caps: small-caps;
+  font-weight: bolder;
+  font-size: 100px;
+}
+.know-more {
+  font-family: var(--my-font);
+  font-size: xx-large;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+#main {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+#card {
+  text-align: center;
+  padding: 100px 10px 10px 10px;
+  height: 240px;
+  background-size: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+  background-image: url(images/ruta-vw-unscreen\ \(1\).gif);
+  text-shadow: 2px 2px black;
+  font-size: xx-large;
+  font-family: var(--my-font);
+  background-position: center center;
+}
+#card:hover {
+  cursor: pointer;
+}
+#temperature {
+  font-size: 60px;
+}
+#action:hover {
+  background-color: rgb(152, 91, 250);
+  cursor: pointer;
+}
+#action {
+  background-image: url(images/3686896.png);
+  background-size: cover;
+  height: 42px;
+  background-color: whitesmoke;
+  width: 42px;
+  padding: 10px;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(15, 15, 15);
+}
+#detail-container {
+  margin-top: 90px;
+  width: calc(100% - 50px);
+  margin-left: 25px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  background-image: url(images/anders-jilden--N2UXcPBIYI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+#Copyright {
+  float: left;
+}
+#bottom-bar {
+  padding-top: 15px;
+}
+#linkedin-link {
+  float: right;
+}
+a {
+  color: inherit;
+}
+#details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.additional-info {
+  height: 530px;
+  background-color: rgba(0, 0, 0, 0.507);
+  color: white;
+  padding: 10px;
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+#location-icon {
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.61);
+  border-radius: 10%;
+}
+.symbols {
+  height: 50px;
+}
+#cityname {
+  height: max-content;
+  color: white;
+  font-size: 50px;
+  text-shadow: 3px 3px black;
+}
+
+/* Styling the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(110, 110, 110);
+  width: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50px;
+}
