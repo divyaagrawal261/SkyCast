@@ -18,6 +18,7 @@ SkyCast is a cutting-edge weather application that brings you real-time weather 
 - Detailed forecasts for informed decision making
 
 ![Screenshot 2023-06-22 142755](https://github.com/divyaagrawal261/SkyCast/assets/121372068/38f61840-c579-40fe-a3dd-c80069768201)
+![Screenshot 2023-06-01 014907](https://github.com/divyaagrawal261/SkyCast/assets/121372068/de0a736d-0fa0-4cff-b1aa-acbe75ba2ca6)
 
 ## Installation
 
@@ -35,13 +36,12 @@ SkyCast is a cutting-edge weather application that brings you real-time weather 
 6. Enjoy an immersive weather experience like never before.
 
 ![Screenshot 2023-06-22 142324](https://github.com/divyaagrawal261/SkyCast/assets/121372068/68115b12-96c8-443e-a6bd-d2a641bb793f)
-![Screenshot 2023-06-01 014907](https://github.com/divyaagrawal261/SkyCast/assets/121372068/de0a736d-0fa0-4cff-b1aa-acbe75ba2ca6)
 
 
 ## Contact
 
-For any inquiries or feedback, please reach out to us at [divyaagrawal0747@gmail.com](mailto:divyaagrawal0747@gmail.com).
+For any inquiries or feedback, please reach out to me at [divyaagrawal0747@gmail.com](mailto:divyaagrawal0747@gmail.com).
 
 ---
 
-Thank you for your interest in SkyCast! We hope you enjoy using our weather application. Stay informed and stay ahead with SkyCast. 🌦️
+Thank you for your interest in SkyCast! I hope you enjoy using my weather application. Stay informed and stay ahead with SkyCast. 🌦️
